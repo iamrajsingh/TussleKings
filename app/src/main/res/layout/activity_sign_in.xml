@@ -6,14 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".SignInActivity"
     android:gravity="center"
-    android:background="@color/grayBackground"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-
         android:layout_marginLeft="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
@@ -23,9 +22,9 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="100dp"
+            android:layout_width="271dp"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/whatsapp" />
+            app:srcCompat="@drawable/twister4" />
 
         <EditText
             android:id="@+id/etEmail"
@@ -33,23 +32,24 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="10dp"
-            android:background="@color/white"
+            android:background="@color/grayBackground"
             android:drawableLeft="@drawable/ic_email"
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
-            android:padding="9dp" />
+            android:padding="9dp"
+            app:cornerRadius="40dp"/>
 
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="@color/white"
+            android:background="@color/grayBackground"
             android:drawableLeft="@drawable/ic_security"
             android:ems="10"
-            android:hint="Password"
+            android:hint="Password(6 digits)"
             android:inputType="textPassword"
             android:minHeight="48dp"
             android:padding="9dp" />
@@ -65,22 +65,23 @@
 
         <Button
             android:id="@+id/btn_signIn"
-            android:layout_width="150dp"
+            android:layout_width="316dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:backgroundTint="@color/blue"
             android:padding="15dp"
             android:text="Sign In"
-            app:cornerRadius="4dp" />
+            app:cornerRadius="40dp" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="match_parent"
             android:layout_marginTop="25dp"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_google"
-                android:layout_width="wrap_content"
+                android:layout_width="267dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="4dp"
                 android:layout_weight="1"
@@ -89,30 +90,21 @@
                 android:padding="15dp"
                 android:text="GOOGLE"
                 android:textColor="@color/black"
-                app:cornerRadius="4dp" />
+                app:cornerRadius="40dp" />
 
-            <Button
-                android:id="@+id/btn_fb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="4dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/fb_color"
-                android:drawableLeft="@drawable/facebookicon"
-                android:padding="15dp"
-                android:text="FACEBOOK"
-                app:cornerRadius="4dp" />
+            <!--            <Button-->
+            <!--                android:id="@+id/btn_fb"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="4dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:backgroundTint="@color/fb_color"-->
+            <!--                android:drawableLeft="@drawable/facebookicon"-->
+            <!--                android:padding="15dp"-->
+            <!--                android:text="FACEBOOK"-->
+            <!--                app:cornerRadius="4dp" />-->
 
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/SignUpPhone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Sign Up with Phone"
-            android:textColor="@color/colorPrimary"
-            android:textSize="18sp" />
 
     </LinearLayout>
 

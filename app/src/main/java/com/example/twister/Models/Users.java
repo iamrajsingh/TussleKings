@@ -22,7 +22,7 @@ public class Users {
         this.password = password;
     }
 
-    public String getProfilepic() {
+    public String getProfilepic(String s) {
         return profilepic;
     }
 
@@ -30,7 +30,7 @@ public class Users {
         this.profilepic = profilepic;
     }
 
-    public String getUserName() {
+    public String getUserName(String displayName) {
         return userName;
     }
 
