@@ -11,12 +11,19 @@ import android.view.MenuItem;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import com.example.twister.Adapters.FragmentAdapter;
 import com.example.twister.databinding.ActivityMainBinding;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
     FirebaseAuth auth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         
         auth = FirebaseAuth.getInstance();
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("message");
+        myRef.setValue("Hello, World");
+        auth = FirebaseAuth.getInstance();
+
+        binding.viewPager.setAdapter(new FragmentAdapter(getSupportFragmentManager()));
+        binding.tablayout.setupWithViewPager(binding.viewPager);
     }
 
     @Override
