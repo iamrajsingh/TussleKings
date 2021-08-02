@@ -18,7 +18,6 @@ public class FragmentAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
 
         switch (position){
-            case 0: return new ChatsFragment();
             default:return new ChatsFragment();
         }
     }
