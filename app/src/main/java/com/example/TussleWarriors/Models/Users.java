@@ -1,15 +1,13 @@
-package com.example.twister.Models;
+package com.example.TussleWarriors.Models;
 
 public class Users {
-    String profilepic, userName, mail, password, userId, lastMessage;
+    String userName, mail, password, userId;
 
-    public Users(String profilepic, String userName, String mail, String password, String userId, String lastMessage) {
-        this.profilepic = profilepic;
+    public Users(String userName, String mail, String password, String userId) {
         this.userName = userName;
         this.mail = mail;
         this.password = password;
         this.userId = userId;
-        this.lastMessage = lastMessage;
     }
 
     public Users() {
@@ -22,13 +20,6 @@ public class Users {
         this.password = password;
     }
 
-    public String getProfilepic() {
-        return profilepic;
-    }
-
-    public void setProfilepic(String profilepic) {
-        this.profilepic = profilepic;
-    }
 
     public String getUserName() {
         return userName;
@@ -62,13 +53,7 @@ public class Users {
         this.userId = userId;
     }
 
-    public String getLastMessage() {
-        return lastMessage;
-    }
 
-    public void setLastMessage(String lastMessage) {
-        this.lastMessage = lastMessage;
-    }
 
 
 }

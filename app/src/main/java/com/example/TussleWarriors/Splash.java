@@ -1,10 +1,9 @@
-package com.example.twister;
+package com.example.TussleWarriors;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.Menu;
 
 public class Splash extends Activity {
 

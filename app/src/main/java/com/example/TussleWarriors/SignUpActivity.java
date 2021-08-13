@@ -1,4 +1,4 @@
-package com.example.twister;
+package com.example.TussleWarriors;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,8 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.twister.Models.Users;
-import com.example.twister.databinding.ActivitySignUpBinding;
+import com.example.TussleWarriors.Models.Users;
+import com.example.TussleWarriors.databinding.ActivitySignUpBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;

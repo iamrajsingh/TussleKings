@@ -65,7 +65,7 @@
 
         <Button
             android:id="@+id/btn_signIn"
-            android:layout_width="316dp"
+            android:layout_width="242dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:backgroundTint="@color/blue"
@@ -81,8 +81,8 @@
 
             <Button
                 android:id="@+id/btn_google"
-                android:layout_width="267dp"
-                android:layout_height="wrap_content"
+                android:layout_width="197dp"
+                android:layout_height="match_parent"
                 android:layout_marginRight="4dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/white"

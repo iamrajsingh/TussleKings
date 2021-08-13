@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.twister">
+    package="com.example.TussleWarriors">
 
     <application
         android:allowBackup="true"
@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Twister">
 
-        <activity android:name=".SignInActivity">
+        <activity android:name="com.example.TussleWarriors.SignInActivity">
 
         </activity>
-        <activity android:name=".SignUpActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name="com.example.TussleWarriors.SignUpActivity"></activity>
+        <activity android:name="com.example.TussleWarriors.MainActivity"></activity>
 
-        <activity android:name=".Splash">
+        <activity android:name="com.example.TussleWarriors.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
