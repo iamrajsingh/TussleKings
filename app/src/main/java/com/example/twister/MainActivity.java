@@ -11,7 +11,6 @@ import android.view.MenuItem;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import com.example.twister.Adapters.FragmentAdapter;
 import com.example.twister.databinding.ActivityMainBinding;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -38,8 +37,7 @@ public class MainActivity extends AppCompatActivity {
         myRef.setValue("Hello, World");
         auth = FirebaseAuth.getInstance();
 
-        binding.viewPager.setAdapter(new FragmentAdapter(getSupportFragmentManager()));
-        binding.tablayout.setupWithViewPager(binding.viewPager);
+
     }
 
     @Override
